@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{titling}
+\usepackage{titlesec}
+\newcommand{\tabitem}{~~\llap{\textbullet}}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage[anythingbreaks]{breakurl}
+\usepackage[margin=1in]{geometry}
+\usepackage[square,numbers]{natbib}
+\setcitestyle{square}
+\usepackage{longtable}
+
+
+
+
+
+\begin{document}	
+	
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		\Huge
+		\textbf{Spatio-Temporal Human Activity Recognition System}
+		
+		
+	
+		
+		\vspace{1cm}
+		
+		\textnormal {(Feasibility Report)}\\
+		\vspace{1cm}
+		\LARGE
+		  Adnan Akbar Khan - 2015-CS-16\\
+		  	\vspace{0.5cm}
+		  Taliah Tajammal- 2015-CS-159\\
+		  	\vspace{0.5cm}
+		  Fahad Khan Chughtai - 2015-CS-30\\
+		  	\vspace{0.5cm}
+		  Muhamad Aurangzeb - 2015-CS-53\\
+		  
+		\vfill
+		
+		 
+		
+		\vspace{0.6cm}
+		
+		\includegraphics[width=0.4\textwidth]{UETlogo.png}
+		
+		\vspace{0.4cm}
+		
+\hspace{-.78cm}	\LARGE DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING\\ 
+			\vspace{0.5cm} UNIVERSITY OF ENGINEERING AND TECHNOLOGY,\\ LAHORE\\
+			
+	
+	
+		
+	\end{center}
+\end{titlepage}	
+	
+	
+\pagenumbering{roman}
+
+\newpage
+\tableofcontents
+\newpage
+\section*{\huge\centerline{ Feasibility Report} }
+\section{\textbf{Introduction}}
+\subsection{\textbf{Overview of Project}}
+The dilemma of using computer vision to understand, observe and recognize human activity is of paramount importance due to ever increasing security threats in the modern world. Also with due to the current advances in the field of artificial intelligence and robotics, the need for efficient, real time human activity recognition is ever increasing. But these are not the only fields that can benefit from human activity recognition. It also finds its applications in the field of health, entertainment, gaming and simulation industry. 
+At the most basic level the problem is to recognize human behavior and activity from vision alone and then use this information to recognize human activity. This can be a very challenging task even for us humans as it requires a great deal of concentration and observation and still the results may not be correct. 
+The proposed system will use Deep learning techniques combined with machine vision to recognize human action, behavior and intent to give a high level description of human activity. The output of the system can then be used in surveillance, robotics, and computer human interaction. 
+
+	
+\subsection{\textbf{Background}}
+The only method of surveillance in Pakistan is hiring a personnel to monitor the video feed from the camera. It can be a very arduous task as the humans tend to lose focus and interest after a short amount of attention span. Also it's very common for the human agent to simply miss a part of the footage due to lack of observation or his / her engagement in other activities like a simple act of taking a sip of tea or picking a pencil from the ground.That single moment can be crucial in disaster prevention. A computer on the other hand never loses focus, never gets tired and it can observe the entire footage at the same time unlike humans who can only observe a small portion of the video feed. Activity recognition can also be very important in self driving cars, game playing and virtual or augmented reality based applications. The proposed system can be modified to fit the needs of any of the above mentioned fields. 
+\subsection{\textbf{Motivation}}
+In surveillance this type of system can be used to extract abnormal or dangerous activity. Where the human agents get tired or lose their focus this system can keep observing without fail. The last decade has seen a tremendous growth in the number of research papers in the field of human activity recognition. 
+\begin{itemize}
+	\item In surveillance this type of system can be used to \textbf{extract abnormal or dangerous activity}. Where the human agents get tired or lose their focus this system can keep observing without fail. The system can be used to monitor high risk transportation systems such as bridges, tunnels, overpasses, underpasses and dams. Also important facilities like plazas, offices, labs can be prone to attacks especially in a crowded city where they are more likely to be accessed by a potential criminal.
+	\item In entertainment and gaming industry such a system can help \textbf{improve human computer interaction to provide a better user experience}. For example playing a game without any game controllers. The system can recognize gamer’s activity like punching, kicking running etc. to control the game.
+	\item The system can also be used to \textbf{monitor patients} who are in critical condition and need to be constantly looked after. As soon as they show some abnormal activity which indicates the need of a medical professional like a doctor or a nurse, the system can alert the said professional through their smart phone. 
+	\item\textbf{In smart homes}, the proposed system can be used to control the electrical appliances to reduces power consumption. The system can also look out for potential hazards like fire, smoke etc. In case of a break in, the system can notify authorities.   
+\end{itemize}
+
+\section{\textbf{Objectives of the project}}
+\subsection{\textbf{Industry Objectives}}
+The project aims to solve the problems of surveillance, health care industry, gaming and virtual reality fields. To make these things possible, the project should be built keeping the target industry in mind. The project should be built in such a way that it should minimize the friction in the deployment process and be readily available for use by the industry. \\
+Here are some of the industrial objectives:
+
+\begin{itemize}
+\item System must be built with technologies that easily available. Use of obsolete or less common technologies and frameworks should be avoided. 
+\item System should be easy to use with a minimum learning curve. It should provide an abstraction layer on top of its workings that even the people with less technical knowledge should be able to work on it. 
+\item The system should be fast and require minimum amount of resources from the hardware. It shouldn't lag and provide an overall satisfying speed and efficiency. 
+\item The system should provide an API to pair with another system or software if necessary.  
+\item The system should be able to work in less optimal conditions as well. The examples of less than optimal conditions can be darker footage, bad lighting and noisy image. 
+\item The system should improve upon the already existing systems in the market.For this purpose, the current systems should be studied and researched thoroughly to gauge their pros and cons. 
+
+\end{itemize}
+
+\subsection{\textbf{Research Objectives}}
+ The main research objective of this project is to go through the most recent research papers on human activity recognition to understand what are some of the most useful techniques used. Then combine or modify these techniques to develop our system for efficient implementation of activity recognition features. We also aim to research the machine learning or deep learning algorithms that will be used in the process to determine what approach will be most optimal and effective for underlying problem.\\     
+Few of the research objectives are as follows:
+
+\begin{itemize}
+	\item The project involves computer vision and deep learning. Hence in the initial phases of the project, the research will be mainly focused on computer vision and deep learning algorithms and the underlying theory behind some of the most popular techniques in the said fields. 
+	\item After the first phase the research will be mainly oriented towards using these deep learning and computer vision algorithms for efficient human activity recognition, which of course is the main goal of the this project. 
+	\item The participants should also research and find a data set of videos for the training of the system. 
+	\item The participating individuals should develop a strong knowledge of the researched topics. They should be able to connect the knowledge gained to the implementation of the system and explain from a theoretical as well as development perspective how the the system works.  
+	\item The final aim of the participating students is to write a research paper on new discoveries made during the project research and development. The research paper should be about how certain techniques were utilized, which techniques were most suitable for a given condition and what modification were made to the popular algorithms to better suit the needs of the project. 
+	
+\end{itemize}
+\subsection{\textbf{Academic Objectives}}
+Due to increasing competition and lack of jobs in the industry, it's apparent that students must gain skills and should be expert in there field of studies if they hope to get employed.  
+Here's a list of important academic objectives we hope to achieve by the end of this project:
+
+\begin{itemize}
+	\item The main objective of the project is to gain skills in the field of artificial intelligence, machine learning, deep learning, computer vision and networking. The team should not only know the basics of these fields but also have in depth understanding of the subject matter. 
+	\item Based on the skills gained in this project, the participants should be ready to work on industry level projects. 
+	\item The participants should learn to do organized work and meet the given deadlines. They should learn to be responsible and punctual. 
+	\item The participants should learn to work in teams and collaborate. They should learn the concept of version control and be able to use tools like git, github, bitbucket etc. 
+	\item The students should learn to focus on their work and be able to participate in a competitive, challenging and politics free environment.
+	\item The participating students should learn to properly document their progress. Documentation is the most important part of any project. Poor documentation can reflect badly on the developer image and lead to miss-communication, and ultimately failure of the project. 
+	\item At the end of the day, entire team should give it their best to complete the project before time and prove their skills, because this is the ultimate goal of the project. They should reflect on their mistakes so far, accept them and make an effort to not repeat them in the future. 
+\end{itemize}
+
+\section{\textbf{Scope of the project}}	
+ The goal of the system is to do general activity recognition. The output from the system can then be used in a specific domain like robotics, surveillance, gaming, entertainment, education etc. The exact domain has not yet been decided upon. It will be decided after consulting with the project advisor, Sir Samyan Wahla. 
+\section{\textbf{Target Audience}}
+\subsection{\textbf{Large Institutions}}
+Since one of the aspect of the project is to facilitate surveillance, the system can be used in large institutions like universities, colleges, offices and shopping plazas to automate the surveillance process. The system can cut down the cost of hiring people for surveillance purpose and help avoid a lot of trouble. 
+\subsection{\textbf{Game Industry}}
+The system can eradicate the need of game controllers thus replacing the push of a button with human actions. This can enhance and the gaming experience and also improve the response time of the gamers especially in the VR games.  
+\subsection{\textbf{Social Media}}
+ The system can be used in virtual reality meet ups. The user can engage in a virtual reality experience and the system can project his actions to another location. Sort of like a communicator in star wars movies.
+\subsection{\textbf{Law Enforcement Agencies}}
+Law enforcement agencies can use the system to keep track of the suspicious activities on crowded places, high risk environments and restricted areas.The system can provide real time feed back thus improving the response time in case of any unfortunate incident. 
+
+\section{\textbf{Possible Applications of Work}}
+\begin{itemize}
+\item There are surveillance cameras installed in all educational institutes and government offices in Pakistan, according to policy issued after APS attacks back in 2015. The problem is that there are no personnel hired to watch the video feed of cameras and it is obvious that cameras are not practically helping in prevention of these kind of disastrous accidents. We can use these already installed cameras to help inform when incidents happening or going to be initiated. Our system can monitor the feed from the cameras and identify any suspicious activity and inform the proper authorities thus helping in the safe city project.
+ 
+\item When an incident happens and the video tape of the said incident is available, it usually takes a long time to spot certain activity from the given recording. Our system can analyze the given videotapes and can inform about such activity, saving a police officer or detective hours and hours of watching an uninteresting tape. We can provide our 
+services to the law enforcement agencies. 
+
+\item Making the students behave in class is a hefty challenge for the teachers. Our system will take input from the camera installed in the class room to spot any activity that is against the ethics of the class. Once the activity and the person responsible is identified, the system can fine the students thus saving the teacher from the pain of dealing with rude students. 
+
+
+\item The proposed system can detect the activity of a newly recruited worker using a camera in an industrial environment. If the worker makes a mistakes using a machine, or performing an activity, our system warns the user through an audio or visual signal somehow..
+\item In Try rooms, using this system, a customer can try clothes virtually without wearing them actually. This not only can save time but also saves customer and shops a lot of trouble. This may involve augmented reality as well and I think this can be a good business idea. 
+\item The proposed system can protect cars in parking lot. Using Smart Parking, the cars parked there will be safe and in case of any suspicious activity owner and security crew will be informed about it. Moreover, this system can tell at time of arrival, on which floor and which parking slot is free in whole parking lot.
+\end{itemize}
+
+%\vspace{-3cm}
+\section{\textbf{Existing System}}
+\subsection{\textbf{Comparisons of Existing Systems}}
+
+\subsection{\textbf{Drawback of Existing System}}
+
+\section{\textbf{Problem Statement}} 
+A huge demand of human activity recognition is present in many fields. The proposed system will use early human activity recognition techniques to quickly and accurately identify human actions and provide a solution for surveillance, virtual reality, gaming and health care industry. 
+
+\section{\textbf{Proposed System}} 
+      Proposed system consist of three modules:
+     
+\section{\textbf{Feasibility Study}}
+\subsection{\textbf{Technical feasibility}}
+The systems will be put together using C++, Python and openCV. Python and C++ are two of the most popular programming languages of the world and openCV is the widely regarded as the most used image processing library. The front end of the system will be made in Electron which is an open source framework for building cross platform apps using Node.js and web technologies. Most of the modules of the system will be written in C++ and some in Python if C++ libraries aren't available. To build this system the participants need to be highly knowledgeable, not only about these technologies, but also about Artificial Intelligence, Deep Learning, Machine Vision and Networking. The task is very difficult but doable, no doubt!
+\subsection{\textbf{Operational feasibility}}
+The system will require a desktop environment and a camera to work. If the system is used for surveillance, these requirements will be already fulfilled by the industry, as a camera is paramount for any surveillance system. Even for use in gaming and virtual reality use case these requirements can be easily fulfilled as most of the Personal Computers contain a built in camera and even an external camera can be bought in cheap prices. So it can be said that system is operationally feasible. 
+\subsection{\textbf{Economical feasibility}}
+In the surveillance industry, the system can erase the need of hiring people for surveillance purposes, which as already discussed is expensive and some times not efficient as humans tend to get tired and lose focus. System's ability to catch and report suspicious behaviour can dramatically reduce or even prevent life and property loss.\\
+As already discussed, most of the computer systems contain built in cameras, so for gaming systems, especially those based on virtual reality, the system can highly increase the user experience and also reduce the cost of buying expensive sensors as camera does all the work. 
+\section{\textbf{System Requirements}}
+\subsection{\textbf{Hardware Requirements}}
+\begin{itemize}
+    \item A PC
+    \item A Camera
+\end{itemize}
+\subsection{\textbf{Software Requirements}}
+\begin{itemize}
+    \item Python 
+    \item C++ 
+    \item Node.js
+\end{itemize}
+\section{\textbf{Limitations and Challenges in implementation of Project}}
+\begin{itemize}
+	\item  The technologies used in the system contain a learning curve and can be very daunting at first. As the participants have to learn about both the theory and the coding, it can be extremely challenging.
+	
+	\item There's no strict classification of human activities. Same activity can change from subject to subject, a term know as \textbf{inter-class variation}. The performing speed and the environment of the can also change the meaning of the activity. Also two different activity can mean the same thing, for example reading from a book or reading from a laptop, this is known as \textbf{inter-class similarity}. This causes two fold problem.
+	
+	\item Although some of the human activity recognition applications like surveillance and fall detection use static cameras, most of the real world situations involve dynamic and changing backgrounds which make it difficult to extract human activity from that background. Also the footage can \textbf{contain occlusions, illumination variance and view point changes,} which makes it even more difficult. 
+	
+	\item Earlier research concentrated on low-level human activities such as jumping, running, and waving hands. One typical characteristic of these activities is having a single subject without any human-human or human-object interactions. However, in the real world, people tend to perform interactive activities with one or more persons and objects.
+	It is a challenging task to locate and track multiple subjects synchronously or recognize the whole human group activities as “playing football” instead of “running.”
+\end{itemize}
+
+
+\section{\textbf{References}}
+
+\end{document}
